@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sorry Dixa 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background animated emojis -->
+  <div id="floating-emojis"></div>
+
+  <div class="card" id="card">
+    <div class="left">
+      <h1>Dixa… I'm sorry 💔</h1>
+      <p class="subtitle">You asked me not to sleep without saying. I fell asleep — this is my apology page.</p>
+
+      <div class="message-box" id="messageBox" aria-live="polite">
+        <div class="typewriter" id="typewriter"></div>
+      </div>
+
+      <div class="controls" role="group" aria-label="apology controls">
+        <button id="replayBtn">Replay message</button>
+        <button class="ghost" id="copyBtn">Copy message</button>
+        <button class="ghost" id="confettiBtn">Make confetti 🎉</button>
+      </div>
+
+      <p class="small" style="margin-top:12px;">
+        Tip: Press <strong>Replay</strong> to run the message again, then copy and paste to Dixa chat.
+      </p>
+    </div>
+
+    <div class="right">
+      <div class="avatar" aria-hidden="true">
+        <div class="initial">D</div>
+      </div>
+      <div class="note">
+        I promise it won't happen again. Please forgive me, Dixa — I really didn't mean to. 🙏
+      </div>
+    </div>
+
+    <!-- hearts container -->
+    <div id="hearts" aria-hidden="true"></div>
+    <!-- confetti canvas -->
+    <canvas id="confettiCanvas" style="position:absolute; inset:0; pointer-events:none;"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
